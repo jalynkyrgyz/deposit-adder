@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank deposit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Пополнение  счета</h1>
+        <form id="book-form">
+          <div>
+            <label for="title">Кто пополняет</label>
+            <input type="text" id="title" class="u-full-width" placeholder="Фамилия и имя">
+          </div>
+          <div>
+            <label for="author">За какой период</label>
+            <input type="text" id="author" class="u-full-width" placeholder="Напишите месяц ">
+          </div>
+          <div>
+            <label for="isbn">Сколько перечислили</label>
+            <input type="text" id="isbn" class="u-full-width" placeholder="Write only numbers!" >
+          </div>
+          <div>
+            <button class="u-full-width" type="submit"> включить в список</button>
+          </div>
+        </form>
+        <hr>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Кто пополняет</th>
+              <th>За какой период</th>
+              <th>Сумма</th>
+            </tr>
+          </thead>
+          <tbody id="book-list">  
+          </tbody>
+        </table>
+      <script src="js/script.js"></script>     
+</body>
+</html>
